@@ -88,7 +88,7 @@ $(document).ready(function(){
 
 	$welcome3='Also, remember you \'keyboarders\', \'<b>Enter</b>\' is new line. \'<b>Ctrl+Enter</b>\' is send.<br>- Atul <span class="emoji emoji-spock"></span><span class="emoji emoji-tongue"></span>';
 
-	$welcome4='Visit the respository <a href=\"http://github.com/atulbhats/atulbhats.com-gui-version';
+	$welcome4='Visit the repository <a href=\"http://github.com/atulbhats/atulbhats.com-gui-version\">Here</a>';
 
 	$help="<table>"+
 		"<tr><td colspan='2'>Use these Identifiers as pings.</td></tr>"+
@@ -99,7 +99,6 @@ $(document).ready(function(){
 		"<tr><td><b>linkedin</b></td><td>Gives a link to my linkedin profile. <b>in</b> will also work</td></tr>"+
 		"<tr><td><b>email</b></td><td>Displays Email Address</td></tr>"+
 		"<tr><td><b>ping</b></td><td>Guides you through the process to send me a message.<b>send message</b> will also work</td></tr>"+
-		
 		"<tr><td><b>exit</b></td><td>Exits Chat.</td></tr>"+
 		"</table>";
 
