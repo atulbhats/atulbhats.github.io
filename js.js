@@ -177,6 +177,7 @@ $(document).ready(function(){
 					$html='Please enter \'<b>demo</b>\' to view the demo or \'<b>repo</b>\' to view the respository of Terminal Website Code';
 					$demo='http://atulbhats.github.io/friggeri';
 					$repo='http://github.com/atulbhats/friggeri-cv-html-template';
+					break;
 
 				case 'website' : 
 				case 'atulbhats.com' : 
