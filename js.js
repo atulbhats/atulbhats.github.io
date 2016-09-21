@@ -59,6 +59,7 @@ $(document).ready(function(){
 			"^Terminal~ : atulbhats.com-terminal-version #"+
 			"^GUI~ : atulbhats.com-gui-version #"+
 			"^friggeri~ or ^cv~ : Friggeri-CV-HTML-Template #"+
+			"^Artista~ : Artista - Art themed website template #"+
 			"#"+
 			"You can also use: #"+
 			"^website~ or ^atulbhats.com~ : To visit my website www.atulbhats.com #"+
@@ -177,6 +178,13 @@ $(document).ready(function(){
 					$html='Please enter \'<b>demo</b>\' to view the demo or \'<b>repo</b>\' to view the respository of Terminal Website Code';
 					$demo='http://atulbhats.github.io/friggeri';
 					$repo='http://github.com/atulbhats/friggeri-cv-html-template';
+					break;
+
+				case 'artista' : 
+				case 'website-template/artista' : 
+					$html='Please enter \'<b>demo</b>\' to view the demo or \'<b>repo</b>\' to view the respository of Terminal Website Code';
+					$demo='http://atulbhats.com/demo/artista';
+					$repo='https://github.com/atulbhats/website-templates/tree/master/artista';
 					break;
 
 				case 'website' : 
