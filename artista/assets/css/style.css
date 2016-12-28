@@ -1,0 +1,418 @@
+/* Artista Website Template Styling. */
+/* Inmports google font: Bad Script; */
+/* Imports Styling for Ink Modal */
+/* Author: AtulBhatS http://atulbhats.com; */
+
+@import url(https://fonts.googleapis.com/css?family=Bad+Script);
+
+@import url('extras.css');
+
+body{
+  font-family: "Helvetica","Segoe UI",sans-serif;
+  color: #1c1c1c;
+  background-color: #fafafa; 
+  background-image: url('../img/canvas.png');
+  background-position: center center;
+  font-size: 16px;
+  background-size: 40px;
+}
+
+*{  
+  outline: none;
+}
+
+*::selection{
+  background: transparent;
+  color: inherit;
+}
+
+a{
+  color:inherit;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited,
+a:active:focus,
+a:focus:active{
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+header{
+  
+}
+
+footer{
+  
+}
+
+img{
+  width: 100%;
+  max-width: 100%;
+}
+
+.is-96x96{
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+}
+.icon{
+  margin: 0 auto;
+}
+
+.icon.is-16{
+  width: 16px;
+}
+
+.icon.is-24{
+  width: 24px;
+}
+
+
+
+/* Page Styling */
+
+header{
+  margin-bottom: 2px;
+}
+
+header .site-title{
+  font-size: 32px;
+  font-family: "Bad Script","Cursive",sans-serif;
+  margin-top: 10px;
+}
+
+header .site-title a{
+  display: inline-block;
+}
+
+header nav{
+  font-family: "Bad Script","Cursive",sans-serif;
+}
+
+
+header .nav-toggle{
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  position: fixed;
+  bottom: 5%;
+  box-shadow: 0px 2px 10px #000;
+  right: 10px;
+  text-align: center;
+  border-radius: 50%;
+  background-image: -webkit-radial-gradient(center,#1B6CFF,#4181F8);
+  background-image: -moz-radial-gradient(center,#1B6CFF,#4181F8);
+  background-image: -o-radial-gradient(center,#1B6CFF,#4181F8);
+  background-image: -ms-radial-gradient(center,#1B6CFF,#4181F8);
+  background-image: -edge-radial-gradient(center,#1B6CFF,#4181F8);
+  background-image: radial-gradient(center,#1B6CFF,#4181F8);
+  color: #fff;
+  font-size: 24px;
+  padding: 8px 0;
+  margin: 10px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+
+header .nav-toggle #dialogue {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.72);
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 2px;
+    width: 100px;
+    border: 1px solid #555;
+}
+
+header .nav-toggle #dialogue .caret {
+    position: absolute;
+    bottom: -4px;
+    border-top-color: rgba(0, 0, 0, 0.72);
+}
+
+header .nav-item {
+  font-weight: lighter;
+  -webkit-backface-visibility: hidden;
+  position: fixed;
+  /*box-shadow: 0px 2px 10px #000;*/
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: transparent;
+  font-size: 24px;
+  margin: 10px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  padding: 8px 0px;
+  display: inline-block;
+}
+
+header .nav-item .fa {
+  color: #000;
+  font-size: 24px;
+}
+
+header .nav-item span {
+  font-size: 8px;
+  color: transparent;
+  left: 0;
+  text-align: center;
+  text-align: center;
+  position: relative;
+  top: -4px;
+}
+
+@media (max-width: 768px){
+  nav{
+    display: block;
+  }
+}
+
+
+footer{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .icon{
+  margin: 0px;
+  font-size: 20px;
+  width: 20px;
+  padding: 4px;
+}
+
+footer .icon.is-small{
+  font-size: inherit;
+}
+
+footer .text-right,
+footer .text-left{
+  text-align: center;
+  margin: 5px 0;
+}
+
+.artista-modal{
+  padding: 25px 10px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -moz-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.artista-modal p,
+.artista-modal h2,
+.artista-modal h3,
+.artista-modal h4{
+  font-family: "Bad Script","Cursive",sans-serif;
+  line-height: 1.8;
+}
+
+.artista-modal u,
+.artista-modal .btn,
+.artista-modal a{
+  font-family: "Open Sans","Helvetica","Segoe UI",sans-serif;
+  text-decoration: none;
+}
+
+.artista-modal .btn-default{
+  color: #000;
+}
+
+
+.artista-modal .artista-modal-content{
+  color: inherit;
+  max-height: none;
+}
+
+.artista-modal .modal-close{
+  opacity: 0;
+}
+
+#about-modal img{
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.17);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    padding: 5px;
+}
+
+#about-modal h2{
+  margin-bottom: 40px;
+}
+
+#about-modal p{
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+#contact-modal{
+  
+}
+
+#contact-modal .icon{
+  font-size: 24px;
+  margin: 5px;
+}
+
+#about-modal{
+  -webkit-filter: hue-rotate(0deg);
+  filter:hue-rotate(0deg);
+}
+
+#about-modal .artista-modal-content{
+  -webkit-filter: hue-rotate(-0deg);
+  filter:hue-rotate(-0deg);
+}
+
+#about-transition .bg-layer{
+  -webkit-filter: hue-rotate(0deg);
+  filter:hue-rotate(0deg);
+}
+
+#artwork-modal{
+  -webkit-filter: hue-rotate(24deg);
+  filter:hue-rotate(24deg);
+}
+
+#artwork-modal .artista-modal-content{
+  -webkit-filter: hue-rotate(-24deg);
+  filter:hue-rotate(-24deg);
+}
+
+#artwork-transition .bg-layer{
+  -webkit-filter: hue-rotate(24deg);
+  filter:hue-rotate(24deg);
+}
+
+#photography-modal{
+  -webkit-filter: hue-rotate(82deg);
+  filter:hue-rotate(82deg);
+}
+
+#photography-modal .artista-modal-content{
+  -webkit-filter: hue-rotate(-82deg);
+  filter:hue-rotate(-82deg);
+}
+
+#photography-transition .bg-layer{
+  -webkit-filter: hue-rotate(82deg);
+  filter:hue-rotate(82deg);
+}
+
+#contact-modal{
+  -webkit-filter: hue-rotate(300deg);
+  filter:hue-rotate(300deg);
+}
+
+#contact-modal .artista-modal-content{
+  -webkit-filter: hue-rotate(-300deg);
+  filter:hue-rotate(-300deg);
+}
+
+#contact-modal .icon{
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    
+}
+
+#contact-transition .bg-layer{
+  -webkit-filter: hue-rotate(300deg);
+  filter:hue-rotate(300deg);
+}
+
+
+@media (min-width: 768px){
+  header .site-title{
+    font-size: 48px;
+  }
+
+  header .nav-toggle{
+    display: none;
+  }
+
+  header div[class*="col"]{
+    height: inherit;
+  }
+
+  header nav{
+    text-align: right;
+    margin: 30px 0 0 0;
+  }
+
+  header .nav-item{
+    position: relative;
+    font-weight: bolder;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: #000;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    width: auto;
+    bottom: -60px;
+    right: -60px;
+  }
+
+  header .nav-item:hover{
+    border-bottom: 1px solid #1B6CFF;
+  }
+
+  header .nav-item span{
+    color: #000;
+    font-size: 16px;
+  }
+
+  footer .text-right{
+    text-align: right;
+  }
+  footer .text-left{
+    text-align: left;
+  }
+
+  .artista-modal{
+    display: -webkit-flex;
+    display: flex;
+    overflow: auto;
+    font-size: 18px;
+  }
+
+  .artista-modal.visible .modal-close{
+    opacity: 1;
+  }
+
+}
+
+@media (min-width: 1500px){
+  .container{
+    width: 1300px;
+  }
+
+  .col-lg-10{
+    width: 100%;
+  }
+
+  .col-lg-offset-1{
+    margin-left: 0;
+  }
+}
