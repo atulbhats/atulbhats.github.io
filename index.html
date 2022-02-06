@@ -26,135 +26,16 @@
 		<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 		
 		<script type="text/javascript" src="js.js"></script>
-		<style>
-		body{
-			padding:10px;
-			/*overflow:hidden;*/
-			background: #181320;
-			color:#eee;
-			font-family: Inconsolata,courier new,courier,sans-serif;
-			line-height: 1.5;
-			font-size:17px;
-		}
-
-		.cursor{
-			width: 10px;
-			height:20px;
-			display:inline-block;
-			vertical-align: bottom;
-			background-color: #eee;
-		}
-
-		#actualinput{
-			display: block;
-			background: transparent;
-			color: transparent;
-			outline: none;
-			border:none;
-			width: 0px;
-
-		}
-
-		.defaulttext,#ascii{
-			color:rgb(219, 158, 0);
-		}
-
-		.commandline,
-		#defaultline{
-			margin-top: 20px;
-		}
-
-		b {
-			color: #FFEC88;
-			font-weight: lighter;
-		}
-
-		.guilink{
-			color:orange;
-			text-decoration: none;
-		}
-
-		.profilepic{
-			border:5px solid #fff;
-			margin-top:10px;
-		}
-
-		div.help b:first-child {
-			padding-right: 20px;
-		}
-
-		a{
-			color:orange;
-			text-decoration: none;
-		}
-
-		.ascii span {
-			display: block;
-			line-height: 1.0;
-		}
-
-		.weather d{
-			position: relative;
-			top: -8px;
-			padding-left: 5px;
-			font-size: 10px;
-		}
-
-		.help div{
-			display: block;
-		}
-			
-		.news-item {
-    display: block;
-    vertical-align: top;
-    margin-top: 20px;
-    border-bottom: 1px dashed #222;
-    padding: 10px 0px;
-}
-
-.news-item span {
-    display: inline-block;
-}
-
-span.news-title {
-    font-weight: bold;
-}
-
-span.news-description {
-    font-size: 15px;
-}
-
-span.news-timestamp {
-    font-size: 12px;
-    margin: 0;
-}
-
-span.news-link {
-    width: 100%;
-}
-
-		@viewport {  
-		    width: device-width;  
-		} 
-
-		</style>
-			<?php echo $script; ?>
-    <script>
-        $(document).on('click','#defaultline', function(){
-        $('#actualinput').focus();
 });
 </script>
 	</head>
-	<body>
-		<noscript>
-			<div class="line"><span class="defaulttext">welcome@atulbhats.github : ~$ </span> Welcome atulbhats.com. </div></br>
-			<div class="line"><span class="defaulttext">no_javascript@atulbhats.github : ~$ </span> It looks like Javascript has been disabled on your browser. This website runs on javascript for user experience. Please enable it and reload the website. If you cannot do so, please visit <a href="http://github.com/atulbhats">http://github.com/atulbhats</a></div><br>
-		</noscript>
-		<div id="introdiv">
-				<span class="defaulttext">user@atulbhats.github : ~$  </span><span id="commandcontainer">Oops! Jquery could not be loaded. The connection was either too slow or interrupted. Please Reload the page for a better UX.</span>
-		</div>
-		<div id="commands">
-			<div id="defaultline"><span class="defaulttext">user@atulbhats.github : ~$  </span><span id="commandcontainer"></span><span class="cursor"></span><input type="text" id="actualinput"></div>
-		</div>
+	<body style="font-family: sans-serif;">
+		<p>Add a <code>/</code> next to the page address and type project name to view the following projects</p>
+		<ul>
+			<li><code>terminal</code></li>
+			<li><code>gui</code></li>
+			<li><code>stellarium</code></li>
+			<li><code>twemojicons</code></li>
+		</ul>
 	</body>
 </html>
