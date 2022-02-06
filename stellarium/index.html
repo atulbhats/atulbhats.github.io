@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Stellarium - Kannada</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="twemojicons.min.css">
+		<link rel="icon" content="favicon.png" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Stellarium - Kannada Starlore" />
+		<meta property="og:description" content="See the Stars and Constellations in Kannada." />
+		<meta property="og:url" content="atulbhats.github.io/stellarium" />
+		<meta property="og:keywords" content="Stellarium, Kannada, Starlore, Stellarium Kannada, KannadaAstronomy, AtulBhatS" />
+		<meta property="og:site_name" content="Stellarium - Kannada" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="AtulBhatS, Atul Bhat, Stellarium, Kannada, Starlore, Stellarium Kannada, KannadaAstronomy">
+		<meta name="description" content="See the Stars and Constellations in Kannada.">
+		<meta property="og:image" content="image.png" />
+		<meta name="robots" content="index,follow">
+		<style>
+			@import 'https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab';
+
+			body{
+				padding: 0;
+				margin: 0;
+				background: #efefef;
+				font-size: 16px;
+				color: #1c1c1c;
+				font-family: "Roboto";
+			}
+
+			/* Text Defns */
+			.text-right{text-align:right}.text-left{text-align:left}.text-center{text-align:center}.text-justify{text-align:justify}@media only screen and (min-width:1200px){.text-lg-right{text-align:right}.text-lg-center{text-align:center}.text-lg-justify{text-align:justify}.text-lg-left{text-align:left}}@media only screen and (min-width:992px) and (max-width:1199px){.text-md-right{text-align:right}.text-md-center{text-align:center}.text-md-justify{text-align:justify}.text-md-left{text-align:left}}@media only screen and (min-width:768px) and (max-width:991px){.text-sm-right{text-align:right}.text-sm-center{text-align:center}.text-sm-justify{text-align:justify}.text-sm-left{text-align:left}}@media only screen and (max-width:767px){.text-xs-right{text-align:right}.text-xs-center{text-align:center}.text-xs-justify{text-align:justify}.text-xs-left{text-align:left}}
+
+			h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+				font-weight: 300;
+			}
+
+			*::selection{
+				background: #f99540;
+				color: #fff;
+			}
+
+
+			.display-inline-block{
+				display: inline-block;
+			}
+
+			img{
+				max-width: 100%;
+			}
+
+
+			p{
+				display: block;
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+
+			code {
+			    background: transparent;
+			    border: 0;
+			    display: inline-block;
+			    padding: 0px 5px;
+			    margin: 0;
+			    top: 0;
+			    font-size: inherit;
+			    position: relative;
+			    color: #7056fd;
+			}
+
+			pre {
+			    display: block;
+			    border: 0;
+			    padding: 10px 15px;
+			    margin: 0;
+			    color: #7056fd;
+			    background: rgba(0, 0, 0, 0.05);
+			}
+
+			.usage .col-sm-7 code{
+				
+			}
+
+			li{
+				margin-bottom: 5px;
+			}
+
+
+			a.btn.btn-lg.btn-primary {
+			    background: #7056fd;
+			    border: 1px solid #7056fd;
+			}
+
+			a{
+				color: #9885ff;
+			}
+
+			a:hover{
+				color: #7056fd;
+			}
+
+
+			header {
+			    height: 3px;
+			    background-color: #7056fd;
+			}
+
+			.landing{
+				background: #2c2c2c;
+				color: #fff;
+				min-height: 80vh;
+				display:flex;
+			    flex-direction: column;
+			    flex-wrap: nowrap;
+			    justify-content: space-around;
+			    align-content: center;
+			    align-items: center;
+			    text-align: center;
+			    padding: 60px 0;
+			    position: relative;
+			    margin-bottom: 25px;
+			    background-image: url(Stellarium.jpg);
+    			background-position: center;
+			}
+
+			.tint {
+			    background: #0000007a;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    z-index: 0;
+			    height: 100%;
+			}
+
+			.landing .container{
+				z-index: 1;
+			}
+
+			.landing small {
+			    position: absolute;
+			    bottom: 5px;
+			    width: 98%;
+			    text-align: center;
+			    left: 1%;
+			}
+
+			.landing .title{
+				font-size: 80px;
+				font-family: "Roboto Slab";
+			}
+
+			section:not(.landing){
+				padding: 20px 0;
+			}
+
+			footer {
+			    padding: 50px 0 20px 0;
+			    background: #1c1c1c;
+			    color: #999;
+			    line-height: 1.0;
+			    border-top: 5px solid #111;
+			    font-size: 14px;
+			    margin-top: 20px;
+			}
+
+			a,a:hover{
+				text-decoration: none;
+			}
+
+			footer a{
+				color:  inherit;
+				padding: 2px 5px;
+				background: #151515;
+			}
+
+
+			footer a:hover{
+				color:#fff;
+			}
+
+			footer iframe{
+				width: 50px;
+				position: relative;
+				top: 5px;
+			}
+
+			.col-sm-8 .col-sm-4 > p{
+				margin-top: 25px;
+			}
+
+			*::selection{
+				background: #f99540;
+				color: #fff;
+			}
+
+			.polaroid, .poster {
+			    background: #fff;
+			    border: 0px solid #fff;
+			    box-shadow: 0px 23px 15px -23px rgb(0 0 0 / 50%);
+			    padding: 5px;
+			}
+
+			hr{
+				border-color: #ccc;
+				margin-bottom: 100px;
+				margin-top:  50px;
+			}
+			.wip{
+				background: #1c1c1c;
+				margin: 100px 0 50px;
+				color: #fff;
+				padding: 50px 0;
+				line-height: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+		</header>
+		<main>
+			<section class="landing">
+				<div class="tint"></div>
+				<div class="container">
+					<div>
+						<h1 class="title"><a href="http://atulbhats.github.io/stellarium/">Kannada Starlore</a></h1>
+						<h2 class="h2">for Stellarium</h2>
+						<h3>Explores the Stars and Constellations in Kannada</h3>
+						<p>Based on the works of <a href="https://taralaya.org/b-s-shylaja.html">Dr.Shylaja</a> and <a href="https://www.iiserpune.ac.in/research/department/humanities-and-social-sciences/people/faculty/regular-faculty/venketeswara-r-pai/310">Dr. Venkateshwara Pai</a></p>
+						<br/>
+						<br/>
+						<div>
+							<a class="btn btn-lg btn-primary" href="https://github.com/atulbhats/stellarium-kannada-starlore/releases">
+								<i class="ti floppy-disk"></i> Download
+							</a>
+							<a class="btn btn-lg btn-primary" href="http://atulbhats.github.io/stellarium/#Documentation">
+								<i class="ti notebook"></i> Documentation
+							</a>
+						</div>
+						<small><a href="https://atulbhats.com">Built by AtulBhatS</a> | <a href="https://github.com/atulbhats/stellarium-kannada-starlore/">Github Project</a></small>
+					</div>
+				</div>
+			</section>
+			<br/>
+			<div class="container">
+				<section class="about text-center">
+					<h2>Kannada What?</h2>
+					<br/>
+					<p>The world also knows about India's rich history and scientific contributions to astronomy.But today, we see that all the constellations and stars are named after characters from Greek Mythology and Arabic names.</p>
+					<p>While we have accepted these standard names, we must also know the names given by Indian astronomers from time immemorial to the various patterns, constellations and stars in the nighy sky.</p>
+					<p>Prof. R.L. Narasimhaiah used his book 'ನಕ್ಷತ್ರ ದರ್ಶನ' to name the modern constellations and in the past decade, Dr. Shylaja of Jawaharlal Nehru Planetarium and Dr. Venkateshwara Pai of IISER, Pune published several papers decoding names of stars from various ancient Indian scripts and records.</p>
+					<p>So this is an effort to put all these past efforts together and bring the night sky to everyone with a curious mind, in Kannada.</p>
+				</section>
+				<hr/>
+				<section class="usage" id="Documentation">
+					<div class="row">
+						<div class="col-xs-12 col-sm-5">
+							
+							<img src="Stellarium4.jpg" class="materialized">
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<h2>Install</h2>
+							<br/>
+							<ol>
+								<li>Download the latest release from Stellarium Kannada Starlore from <a href="https://github.com/atulbhats/">@atulbhats</a>'s <a href="https://github.com/atulbhats/stellarium-kannada-starlore/">Repository</a>.</li>
+								<li>Extract the <code>Kannada</code> folder into <pre>C:\Program Files\Stellarium\skycultures\</pre>.</li>
+								<li>Open Stellarium</li>
+								<li>Open the <b>Sky and Vieweing Options [F4]</b>.</li>
+								<li>Under the Starlore Tab, select "Kannada".</li>
+								<li>Explore the Celestial Sphere in Kannada</li>
+							</ol>
+						</div>
+						
+					</div>
+				</section>
+				<hr/>
+				<section class="options text-xs-center  ">
+					<div align="center">
+							<h2>Celestial Sphere in Kannada</h2>
+							<p>The Kannada Starlore labels all the Constellations with their Kannada Names. Stars and Asterisms with recorded Kannada names are also labelled so.</p>
+					<div align="center">
+					<br/>
+					<div class="row">
+						<div class="col-xs-12 col-sm-4 text-xs-center  text-center">
+							<div class="text-center">
+								<div class="polaroid">
+									<img src="Stellarium5.jpg" class="materialized">
+									<p>SSOs</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 text-xs-center  text-center">
+							<div class="text-center">
+								<div class="polaroid">
+									<img src="Stellarium2.jpg" class="materialized">
+									<p>Constellations</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 text-xs-center  text-center">
+							<div class="text-center">
+								<div class="polaroid">
+									<img src="Stellarium3.jpg" class="materialized">
+									<p>Asterisms</p>
+								</div>
+							</div>
+						</div>
+						<br/>
+					</div>
+				</section>
+			</div>
+			<div class="wip">
+				<div class="container">
+					<div align="center">
+						<h2>Work in Progress!</h2>
+						<p>With Multiple papers on this topic, and our designers busy working on the constellation images, this project will update with more Kannada Astronomy details.</p>
+						<h4>Be Sure to Check back again!</h4>
+					</div>
+				</div>
+			</div>
+			<div class="KannadaAstronomy">
+				<div class="container">
+					<div align="center">
+						<h2>#KannadaAstronomy</h2>
+						<p>In an effort to popularize astronomy in Kannada, use the hashtag <a href="https://www.google.com/search?q=%23KannadaAstronomy">#KannadaAstronomy</a>.</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<div class="z-depth-1 poster">
+								<img src="https://i.imgur.com/a0EE0B5.jpeg">
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<div class="z-depth-1 poster">
+								<img src="https://i.imgur.com/YRiTGZ3.jpg">
+							</div>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<div class="z-depth-1 poster">
+								<img src="https://i.imgur.com/hvU4eLI.jpeg">
+							</div>
+						</div>
+					</div>
+					<br/>
+					<center><p>The above works were made through <a href="https://paac.ppc.ac.in">Poornaprajna Amateur Astronomers' Club</a>.</p></center>
+				</div>
+			</div>
+			<footer>
+				<div class="container">
+					<div align="center">
+						<p><a href="https://github.com/atulbhats/stellarium-kannada-starlore">Github Project</a>. 
+							<iframe src="https://ghbtns.com/github-btn.html?user=atulbhats&repo=stellarium-kannada-starlore&type=star&count=false" frameborder="0" scrolling="0" height="20px"></iframe>
+							<iframe src="https://ghbtns.com/github-btn.html?user=atulbhats&repo=stellarium-kannada-starlore&type=fork&count=false" frameborder="0" scrolling="0" height="20px"></iframe>
+							<iframe src="https://ghbtns.com/github-btn.html?user=atulbhats&repo=stellarium-kannada-starlore&type=follow&count=false" frameborder="0" scrolling="0" height="20px"></iframe> .
+							<a href="http://github.com/atulbhats/">Other Projects</a></p>
+						<p>Licensed under <a href="http://opensource.org/licenses/mit-license.html">MIT License</a>. Graphics Licensed by Twitter Inc. under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a>
+						<br/><br/>
+						<p><span style="transform: rotate(180deg);display: inline-block;position: relative;top: -3px;">&copy;</span>2022 AtulBhatS.</p>	
+					</div>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
