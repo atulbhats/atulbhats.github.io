@@ -12,39 +12,41 @@
 		document.addEventListener("DOMContentLoaded", function(){document.body.innerHTML += atob('PGRpdiBzdHlsZT0icG9zaXRpb246IGFic29sdXRlO3JpZ2h0OiAwO2JvdHRvbTogMDtwYWRkaW5nOiAyNXB4O2ZvbnQtc2l6ZTogMjhweDtjb2xvcjogI2FhYTtmb250LWZhbWlseTogU2Vnb2UgVUksIHNhbnMtc2VyaWY7Ij5EZXZlbG9wZWQgYnkgPGIgc3R5bGU9ImZvbnQtZmFtaWx5OiBTZWdvZSBVSSwgc2Fucy1zZXJpZjsiPjxhIGhyZWY9Imh0dHBzOi8vYXR1bGJoYXRzLmNvbSIgc3R5bGU9InRleHQtZGVjb3JhdGlvbjpub25lO2NvbG9yOmluaGVyaXQ7Ij5BdHVsQmhhdFM8L2E+PC9iPjwvZGl2Pg==');});	
 	</script>
 </head>
-<body style="height: 100vh; font-family: Rajdhani, Titillium, &quot;Titillium Web&quot;, Arial, sans-serif;">
-	<div class="raid" style="position: absolute;width: 30%;background: #aaa;margin: 0 auto;left: 35%;min-height: 250px;text-align: center;font-weight: bolder;border-radius: 0 0 20px 20px;">
-		<span class="rsec" style="font-size: 236px;font-family: courier;text-align: center;">30</span>
-		<span style="font-size: 64px;position: absolute;bottom: 0;left: 0;width: 100%;text-align: center;color: #fff;">Seconds</span>
+<body class="" style="height: 100vh; font-family: Rajdhani, Titillium, &quot;Titillium Web&quot;, Arial, sans-serif;">
+	<div class="raid" style="position: absolute;width: 30%;background: #434343;margin: 0 auto;left: 35%;min-height: 250px;text-align: center;font-weight: bolder;border-radius: 0 0 20px 20px;color: #fff;">
+		<span class="rsec" style="font-size: 236px;font-family: courier;text-align: center;">00</span>
+		<span style="font-size: 64px;position: absolute;bottom: 0;left: 0;width: 100%;text-align: center;color: #8b8b8b;">Seconds</span>
     <a class="toggle raid" style="cursor: pointer;position: absolute;bottom: -5px;font-size: 64px;right: -4px;filter: grayscale(1);">⏯️</a>
-    <a class="reset raid" style="cursor: pointer;position: absolute;bottom: -5px;font-size: 64px;left: -4px;filter: grayscale(1);">🔄</a>
-    <span class="raidrunning" style="position: absolute;top: 10px;right: 10px;display: none;filter: invert(1);">⏳</span>
+    <a class="reset raid" style="cursor: pointer;position: absolute;bottom: -5px;font-size: 64px;left: -4px;filter: grayscale(1);">⏹️</a>
+    <span class="raidrunning" style="position: absolute; top: 10px; right: 10px; filter: invert(0); display: none;">⏳</span>
 	</div>
-	<div class="score1" style="position: absolute;top: 250px;width: 30%;border: 1px solid #aaa;border-radius: 20px;text-transform: uppercase;">
-		<span class="b" style="position: absolute; top: 180px; font-size: 45px; text-align: right; width: 100%; color: green; font-weight: bolder; padding: 0px 15px; display: none;">Bonus</span>
-		<input value="IND" type="text" style="font-size: 128px;height: 164px;padding: 25px;text-align: center;border: 0;background: #fafafa;width: 90%;border-radius: 24px;margin: 0.5%;font-weight: bolder;text-transform: uppercase;">
-		<span class="sc" style="font-size: 256px;text-align: center;display: block;font-weight: bolder;">00</span>
-		<a class="btn bonus" style="position: absolute;bottom: 6px;background: transparent;box-shadow: none;font-size: 32px;color: grey;border-radius: 50px;background: #efefef;padding: 4px;height: 46px;width: 46px;right: 7px;">B</a>
+	<div class="score1 score left">
+		<span class="b" style="display: none;">Bonus</span>
+		<input value="IND" type="text">
+		<span class="sc">00</span>
+		<a class="btn bonus">B</a>
 	</div>
-	<div class="score2" style="position: absolute;top: 250px;width: 30%;border: 1px solid #aaa;border-radius: 20px;text-transform: uppercase;right: 0;">
-		<span class="b" style="position: absolute; top: 180px; font-size: 45px; text-align: right; width: 100%; color: green; font-weight: bolder; padding: 0px 15px; display: none;">Bonus</span>
-		<input value="IRN" type="text" style="font-size: 128px;height: 164px;padding: 25px;text-align: center;border: 0;background: #fafafa;width: 90%;border-radius: 24px;margin: 0.5%;font-weight: bolder;text-transform: uppercase;">
-		<span class="sc" style="font-size: 256px;text-align: center;display: block;font-weight: bolder;">00</span>
-		<a class="btn bonus" style="position: absolute;bottom: 6px;background: transparent;box-shadow: none;font-size: 32px;color: grey;border-radius: 50px;background: #efefef;padding: 4px;height: 46px;width: 46px;left: 7px;">B</a>
+	<div class="score2 score right">
+		<span class="b" style="display: none;">Bonus</span>
+		<input value="IRN" type="text">
+		<span class="sc">00</span>
+		<a class="btn bonus">B</a>
 	</div>
+	<a class="switch" style="
+    position: absolute; left: 47%; font-size: 64px; font-weight: 900; filter: grayscale(1); top: 79%;">🔄</a>
 	<div class="match" style="background: #ccc;width: 40%;left: 30%;position: absolute;top: 50%;background: #Efefef;height: 190px;">
-<span class="running" style="position: absolute;top: 10px;right: 10px;display: none;">⏳</span>
+<span class="running" style="position: absolute; top: 10px; right: 10px; display: none;">⏳</span>
     <input class="mm" style="font-size: 164px;position: absolute;left: 0;width: 47%;height: auto;text-align: right;border: 0;" value="00">
 		<span style="font-size: 127px;position: absolute;left: 47%;width: 50%;height: auto;color:#999;">:</span>
 		<input class="ss" style="font-size: 164px;position: absolute;right: 0;width: 50%;height: auto;text-align: left;border: 0;" value="00">
-		<div style="position: absolute;bottom: -50px;text-align: center;display: flex;left: 30%;">
+		<div style="position: absolute;bottom: -50px;text-align: center;display: flex;left: 28.5%;">
 			<a class="btn reset match" style="background: transparent;box-shadow: none;font-size: 50px;filter: grayscale(1);">🔄</a>
 			<a class="btn pause match" style="background: transparent;box-shadow: none;font-size: 50px;filter: grayscale(1);">⏸️</a>
 			<a class="btn start match" style="background: transparent;box-shadow: none;font-size: 50px;filter: grayscale(1);">▶️</a>
 		</div>
 	</div>
 	<div class="reset"></div>
-	<div style="position: absolute;bottom: 10px;padding: 15px;font-size: 32px;border-radius: 50px;text-align: center;width: 50%;left: 25%;border: 1px solid;" class="eventName">That Kabaddi Tournament</div>
+	<div style="position: absolute;bottom: 10px;padding: 15px;font-size: 32px;border-radius: 50px;text-align: center;width: 50%;left: 25%;border: 1px solid;" class="eventName">All India Inter University Kabaddi Championship</div>
 	<!--<div style="position: absolute;right: 0;bottom: 0;padding: 25px;font-size: 28px;color: #aaa;font-family: Segoe UI, sans-serif;">Developed by <b style="font-family: Segoe UI, sans-serif;">AtulBhatS</b></div>-->
 	<script>
 		$(document).ready(function(){
@@ -56,10 +58,14 @@
 			$roundTime = 20;
 			$raidTime = 30;
 			$dark = false;
-			$eventName = "That Kabaddi Tournament";
+			$eventName = "All India Inter University Kabaddi Championship";
 			$newRoundTime = null;
 			$newRaidTime = null;
 			$newEventName = '';
+
+			$('.round.duration').val($roundTime);
+			$('.raid.duration').val($raidTime);
+			$('.event').val($eventName);
 
 			function getModalValues(){
 				$newRoundTime = $('.round.duration').val();
@@ -93,6 +99,7 @@
 			});
 
 			$('.eventName').text($eventName);
+			$('.mm').val($roundTime);
 
 			function toggleRaid(){
 				//alert($raidCounter);
@@ -108,26 +115,40 @@
 				}
 			}
 
+			$raidTimer = 0;
+
 			function runRaid(){
 				//alert('running raid');
 				$rs = parseInt($('.rsec').text());
 				if($rs > 0){
+					$raidTimer = 1;
 					$rcounter = setInterval(function(){
 						$rs = $rs -1;
 						$('.rsec').text(($rs<10)?"0"+$rs:$rs);
 						if($rs == 0){
 							$('.b').hide();
 							clearInterval($rcounter);
+							$raidTimer = 0;
 							$('.raidrunning').fadeOut();
 						}
 					},1000);
 				}
 			}
 
+			$('.switch').on('click',function(){
+				$('body').find('.score.right').addClass('rtemp');
+				$('body').find('.score.right').removeClass('right');
+				$('body').find('.score.left').addClass('right');
+				$('body').find('.score.left').removeClass('left');
+				$('body').find('.score.rtemp').addClass('left');
+				$('body').find('.score.rtemp').removeClass('rtemp');
+			});
+
 			$matchTimer = '';
 			$runningMatch = 0;
 
 			$('.reset.raid').on('click',function(){
+				$raidTimer = 0;
 				clearInterval($rcounter);
 				$('.raidrunning').fadeOut();
 				$('.b').hide();
@@ -135,6 +156,15 @@
 				$('.rsec').text($raidTime);
 			});
 
+			$(document).on('keydown',function(e){
+			 	$k = e.which;
+			 	if($k == 13){
+			 		$('.toggle.raid').click();
+			 	}
+			 	else if($k == 32 && $raidTimer == 1){
+					$('.reset.raid').click();			 		
+			 	}
+			 });
 
 			$('.reset.raid').click();
 
@@ -236,6 +266,8 @@
 			});
 
 			 $('.modal').modal();
+
+
 		});
 
 	</script>
@@ -251,6 +283,7 @@
       				<li style="font-family: Segoe UI, Tahoma, Sans-Serif !important;font-weight: 400;">🖱️ <strong>Left Click</strong> to Increase and <strong>Right Click</strong> to Decrease Points.</li>
       				<li style="font-family: Segoe UI, Tahoma, Sans-Serif !important;font-weight: 400;">🔠 Edit Team Names by Clicking the Text and Edit.</li>
       				<li style="font-family: Segoe UI, Tahoma, Sans-Serif !important;font-weight: 400;">♻️ <strong>Ctrl + R</strong> to Reset everything.</li>
+      				<li style="font-family: Segoe UI, Tahoma, Sans-Serif !important;font-weight: 400;">⌨️ <strong>Enter</strong> to Toggle Raid Timer and <strong>Space</space> to Reset Raid Timer.</li>
       			</ul>
       			<hr>
       			<h4>Settings</h4>
@@ -274,7 +307,7 @@
 					<span style="color: #999;font-size: 12px;">  Seconds</span>
 				</p>
 				<p>Event Name  
-					<input type="text" class="event" style="display: inline;width: 80%;background: #efefef;border-radius: 15px;border: none;">
+					<input type="text" class="event" style="display: inline;width: 80%;background: #efefef;padding: 5px 15px;border-radius: 15px;border: none;">
 				</p>
       		</div>
     	</div>
@@ -300,4 +333,4 @@
 			}
 		</style>
 	</div>
-<div style="position: absolute;right: 0;bottom: 0;padding: 25px;font-size: 28px;color: #aaa;font-family: Segoe UI, sans-serif;">Developed by <b style="font-family: Segoe UI, sans-serif;"><a href="https://atulbhats.com" style="text-decoration:none;color:inherit;">AtulBhatS</a></b></div></body></html>
+</body></html>
