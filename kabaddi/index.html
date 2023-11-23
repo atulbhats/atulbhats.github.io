@@ -1,5 +1,22 @@
-<html><head>
-<meta charset="UTF-8">
+<!DOCTYPEHTML>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAt0lEQVR4nN3SMUoDURCA4Q+8R7roptXaI2gQS8+x7EkUPIGdEW9gbFNmOw1pYpNCKztZeTALG3hbuApCBn6YGXg/780b9iImmGPxQ55QJEGJZiBlElSdxgdqfPUc2ARtXXUFK4xwiqvoPQcpv8dhMMsJ3vGCW1xErw5Sfoab4DwnaHCHY2yjXgat4DqY5gQLHOAEl5knPMT1x3jMCT7xGqx7hvgW7Ayx/O03FrEUQxbp6P/2/8/iG3i3enthGinZAAAAAElFTkSuQmCC" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Kabaddi Scoreboard" />
+		<meta property="og:description" content="A webpage to keep track of scores for a Kabaddi Game and Enthusiasts" />
+		<meta property="og:url" content="http://atulbhats.github.io/kabaddi" />
+		<meta property="og:keywords" content="Kabaddi, Score, Scoreboard, Kabaddi Sports, Sports, AtulBhatS, Atul Bhat, Mangalore, Web Design, Web Designer, Web Developer, Web Development, Photoshop, Photography, Coding, Geek, Physics, Cosmology, Govinda dasa college, PAAC, Poornaprajna College, Poornaprajna" />
+		<meta property="og:site_name" content="AtulBhatS" />
+		<meta name="keywords" content="Kabaddi, Score, Scoreboard, Kabaddi Sports, Sports, AtulBhatS, Atul Bhat, Mangalore, Web Design, Web Designer, Web Developer, Web Development, Photoshop, Photography, Coding, Geek, Physics, Cosmology, Govinda dasa college, PAAC, Poornaprajna College, Poornaprajna">
+		<meta name="description" content="A webpage to keep track of scores for a Kabaddi Game and Enthusiasts">
+		<meta property="og:image" content="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAt0lEQVR4nN3SMUoDURCA4Q+8R7roptXaI2gQS8+x7EkUPIGdEW9gbFNmOw1pYpNCKztZeTALG3hbuApCBn6YGXg/780b9iImmGPxQ55QJEGJZiBlElSdxgdqfPUc2ARtXXUFK4xwiqvoPQcpv8dhMMsJ3vGCW1xErw5Sfoab4DwnaHCHY2yjXgat4DqY5gQLHOAEl5knPMT1x3jMCT7xGqx7hvgW7Ayx/O03FrEUQxbp6P/2/8/iG3i3enthGinZAAAAAElFTkSuQmCC" />
+		<meta name="robots" content="index,follow">
+
+
 <title>Kabaddi ScoreBoard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
@@ -11,6 +28,188 @@
 	<script>
 		document.addEventListener("DOMContentLoaded", function(){document.body.innerHTML += atob('PGRpdiBzdHlsZT0icG9zaXRpb246IGFic29sdXRlO3JpZ2h0OiAwO2JvdHRvbTogMDtwYWRkaW5nOiAyNXB4O2ZvbnQtc2l6ZTogMjhweDtjb2xvcjogI2FhYTtmb250LWZhbWlseTogU2Vnb2UgVUksIHNhbnMtc2VyaWY7Ij5EZXZlbG9wZWQgYnkgPGIgc3R5bGU9ImZvbnQtZmFtaWx5OiBTZWdvZSBVSSwgc2Fucy1zZXJpZjsiPjxhIGhyZWY9Imh0dHBzOi8vYXR1bGJoYXRzLmNvbSIgc3R5bGU9InRleHQtZGVjb3JhdGlvbjpub25lO2NvbG9yOmluaGVyaXQ7Ij5BdHVsQmhhdFM8L2E+PC9iPjwvZGl2Pg==');});	
 	</script>
+<style>
+			@-webkit-keyframes spin {
+			    0%  {-webkit-transform: rotate(0deg);}
+			    30%  {-webkit-transform: rotate(180deg);}
+			    60%  {-webkit-transform: rotate(180deg);}
+			    100% {-webkit-transform: rotate(360deg);}   
+			}
+
+			.running,.raidrunning{
+				-webkit-animation: spin 4s infinite linear;
+			}
+
+			.score{
+				position: absolute;
+			    top: 250px;
+			    width: 30%;
+			    border: 1px solid #aaa;
+			    border-radius: 20px;
+			    text-transform: uppercase;
+			    animation: all 0.2s ease-in ;
+			}
+
+			.score .b{
+				position: absolute;
+			    top: 180px;
+			    font-size: 45px;
+			    text-align: right;
+			    width: 100%;
+			    color: green;
+			    font-weight: bolder;
+			    padding: 0px 15px;
+			    display: none;
+			}
+
+			.score input{
+				font-size: 128px!important;
+			    height: 164px!important;
+			    padding: 25px!important;
+			    text-align: center!important;
+			    border: 0!important;
+			    background: #fafafa!important;
+			    width: 90%!important;
+			    border-radius: 24px!important;
+			    margin: 0.5%!important;
+			    font-weight: bolder!important;
+			    text-transform: uppercase!important;
+			}
+
+			.score .sc{
+				font-size: 256px;
+			    text-align: center;
+			    display: block;
+			    font-weight: bolder;
+			}
+
+			.score .bonus{
+				position: absolute;
+			    bottom: 6px;
+			    background: transparent;
+			    box-shadow: none;
+			    font-size: 32px;
+			    color: grey;
+			    border-radius: 50px;
+			    background: #efefef;
+			    padding: 4px;
+			    height: 46px;
+			    width: 46px;
+			}
+
+			.score.left{
+				left:0;
+				color:#fd3939;
+			}
+
+			.score.left .b{
+				left:0;
+				color:#fd3939;
+			}
+
+			.score.left input{
+				left: 0;
+				color:#fd3939;
+			}
+
+			.score.left .sc{
+				left: 0;
+				color:#fd3939;
+			}
+
+			.score.left .bonus{
+				right: 7px;
+				color:#fd3939;
+			}
+
+			.score.right{
+				right: 0;
+				color: #397dfd;
+			}
+
+			.score.right .b{
+				right: 0;
+				color: #397dfd;
+			}
+
+			.score.right input{
+				right: 0;
+				color: #397dfd;
+			}
+
+			.score.right .sc{
+				right: 0;
+				color: #397dfd;
+			}
+
+			.score.right .bonus{
+				left: 7px;
+				color: #397dfd;
+			}
+
+			.swtich{
+				cursor: pointer;
+			}
+
+			body.dark {
+			    background: #1c1c1c;
+			}
+
+			.dark .raid {
+			    background: #2c2c2c!important;
+			}
+
+			.dark .raid a {
+			    background: transparent!important;
+			}
+
+			.dark .score {
+			    border-color: #3c3c3c;
+			}
+
+			.dark .score input {
+			    background: #ffffff05!important;
+			}
+
+			.dark .toggle, .dark .swap {
+			    filter: grayscale(1) invert(0.2)!important;
+			}
+
+			.dark .match {
+			    background: #3c3c3c!important;
+			 }
+
+
+			.dark .match > div {
+			    background: transparent;
+			}
+
+			.dark .match > div > a {
+			    background: transparent!important;
+			}
+
+			.dark .match input {
+			    color: #fff;
+			}
+
+			.dark .match > span {
+			    color: #1c1c1c!important;
+			}
+
+			.dark .bonus {
+			    background: #3c3c3c;
+			}
+
+			.dark .event {
+			    border-color: #ccc!important;
+			    color: #fff;
+			}
+
+			.dark input.raid.duration, .dark input.event{
+				background: #efefef!important;
+				color:#000!important;
+			}
+		</style>
 </head>
 <body class="" style="height: 100vh; font-family: Rajdhani, Titillium, &quot;Titillium Web&quot;, Arial, sans-serif;">
 	<div class="raid" style="position: absolute;width: 30%;background: #434343;margin: 0 auto;left: 35%;min-height: 250px;text-align: center;font-weight: bolder;border-radius: 0 0 20px 20px;color: #fff;">
@@ -32,7 +231,7 @@
 		<span class="sc">00</span>
 		<a class="btn bonus">B</a>
 	</div>
-	<a class="switch" style="
+	<a class="swap" style="
     position: absolute; left: 47%; font-size: 64px; font-weight: 900; filter: grayscale(1); top: 79%;">🔄</a>
 	<div class="match" style="background: #ccc;width: 40%;left: 30%;position: absolute;top: 50%;background: #Efefef;height: 190px;">
 <span class="running" style="position: absolute; top: 10px; right: 10px; display: none;">⏳</span>
@@ -74,7 +273,6 @@
 			}
 
 			$('.modal-close').on('click',function(){
-				$newDark = $('#mySwitch').prop('checked');
 				getModalValues();
 				if($newRoundTime != null && parseInt($newRoundTime) != NaN){
 					if($newRoundTime != "" && parseInt($newRoundTime) != 0){
@@ -135,7 +333,7 @@
 				}
 			}
 
-			$('.switch').on('click',function(){
+			$('.swap').on('click',function(){
 				$('body').find('.score.right').addClass('rtemp');
 				$('body').find('.score.right').removeClass('right');
 				$('body').find('.score.left').addClass('right');
@@ -265,9 +463,16 @@
 				$(this).parent().find('.sc').text(($score < 10)?"0"+$score:$score);
 			});
 
-			 $('.modal').modal();
+			$('.modal').modal();
 
-
+			$(".switch").find("input[type=checkbox]").on("change",function() {
+				if($('.switch').find('input').prop('checked')){
+					$('body').addClass('dark');
+				}
+				else{
+					$('body').removeClass('dark');
+				}
+			});
 		});
 
 	</script>
@@ -290,7 +495,7 @@
   				<p style="display: inline;">Interface </p><div class="switch" style="display: inline;">
 				    <label>
 				      Light
-				      <input type="checkbox" disabled="">
+				      <input type="checkbox">
 				      <span class="lever"></span>
 				      Dark
 				    </label>
